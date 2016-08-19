@@ -1,0 +1,316 @@
+.album-artwork{
+	margin-top: 100px;
+	padding-top: 70px;
+}
+.album-image{
+	max-width: 100%;
+}
+.album-buttons{
+	margin-top: 30px;
+}
+.buttons-container{
+	margin-top: 100px;
+}
+.album-buttons a{
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+
+.frank-container{
+	margin-top: 50px;
+}
+.frank-image{
+	display: none;
+	max-width: 400px;
+}
+.modal-body{
+	font-size: 18pt;
+}
+
+#mc-embedded-subscribe {
+    background: #111;
+}
+
+#mc-embedded-subscribe:hover {
+    background: #555;
+}
+
+/* input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.number-container{
+	display: none;
+	height: auto;
+	width:100%;
+	padding: 10px;
+}
+
+.number-input{
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	border-radius: 12px;
+	width: 100%;
+	height: 50px;
+	margin: auto auto auto 10px;
+	font: 20pt 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+	padding: 0 10px;
+	border-top-width: 1px;
+	border: 1px solid rgba(0, 0, 0, 0.59);
+	word-wrap: break-word;
+	white-space: pre-wrap;
+}
+
+.number-submit{
+	font-size: 20pt;
+	padding: 8px;
+	border: none;
+	background: white;
+	color: #0B93F6;
+}
+
+.number-input:selected{
+	border: none;
+}
+
+.share{
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.note{
+	font-size: 14pt;
+}
+
+.end-button{
+	margin-bottom: 30px;
+}
+
+.links{
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 10px;
+    margin-bottom: 50px; 
+}
+.links a{
+	color: #0B93F6;
+    font-size: 20pt;
+}
+.move{
+	text-align: left;
+	margin-top: 20px;
+}
+.move img{
+	width: 30px;
+}
+.move a{
+	color: black;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+/* iMessage */
+
+.clear {
+	clear: both;
+	height: 30px;
+}
+
+.from-me {
+	margin-top: 50px;
+	position: relative;
+	font-size: 40pt;
+	padding: 20px 20px;
+	color: white;
+	background: #0B93F6;
+	border-radius: 30px;
+	float: right;
+}
+.from-me:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	bottom: -2px;
+	right: -7px;
+	height: 23px;
+	border-right: 20px solid #0B93F6;
+	border-bottom-left-radius: 16px 14px;
+	-webkit-transform: translate(0, -2px);
+}
+.from-me:after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	bottom: -5px;
+	right: -55px;
+	width: 26px;
+	height: 26px;
+	background: white;
+	border-bottom-left-radius: 10px;
+	-webkit-transform: translate(-30px, -2px);
+}
+
+.from-them {
+	display: none;
+	font-size: 40pt;
+	position: relative;
+	padding: 10px 20px;
+	background: #E5E5EA;
+	border-radius: 25px;
+	color: black;
+	float: left;
+}
+
+.from-them:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  bottom: -2px;
+  left: -7px;
+  height: 20px;
+  border-left: 20px solid #E5E5EA;
+  border-bottom-right-radius: 16px 14px;
+  -webkit-transform: translate(0, -2px);
+}
+.from-them:after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  bottom: -2px;
+  left: -26px;
+  width: 26px;
+  height: 23px;
+  background: white;
+  border-bottom-right-radius: 10px;
+  -webkit-transfofrm: translate(-30px, -2px);
+}
+
+/* Responsive */
+@media only screen and (max-width : 414px) {
+	.frank-container{
+		margin: 0px;
+		padding: 0px;
+		min-width: 100%;
+	}
+	.frank-image{
+		min-width: 100%;
+	}
+	.frank-image{
+		width: 100%;
+	}
+	.from-me {
+		margin-top: 20px;
+		font-size: 20pt;
+	}
+	.from-them{
+		font-size: 20pt;
+	}
+	.number-container{
+		padding: 0px;
+		margin-bottom: 30px;
+		font-size: 16pt;
+	}
+	.links{
+		margin-bottom: 30px;
+	}
+	.links a{
+		font-size: 14pt;
+	}
+	.buttons-container{
+		margin-top: 10px;
+	}
+	.album-artwork{
+		margin-top: 10px;
+		padding-top: 0px;
+	}
+
+}
+
+@media only screen and (max-width : 320px) {
+	.number-input{
+		font-size: 12pt;
+	}
+}
+
+
+/* Share buttons */
+.resp-sharing-button {
+  display: inline-block;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  transition: background-color 25ms ease-out, border-color 25ms ease-out, opacity 250ms ease-out;
+  margin: 0.5em;
+  padding: 0.5em 0.75em;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.resp-sharing-button a {
+  text-decoration: none;
+  color: #FFF;
+  display: block;
+}
+
+.resp-sharing-button__icon {
+  display: inline-block;
+}
+
+.resp-sharing-button__icon svg {
+  width: 1em;
+  height: 1em;
+  margin-bottom: -0.1em;
+}
+
+/* Non solid icons get a stroke */
+.resp-sharing-button__icon {
+  stroke: #FFF;
+  fill: none;
+}
+
+/* Solid icons get a fill */
+.resp-sharing-button__icon--solid,
+.resp-sharing-button__icon--solidcircle {
+  fill: #FFF;
+  stroke: none;
+}
+
+.resp-sharing-button__link {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.resp-sharing-button--large .resp-sharing-button__icon svg, .resp-sharing-button--medium .resp-sharing-button__icon svg {
+  padding-right: 0.4em;
+}
+
+.resp-sharing-button__wrapper {
+  display: inline-block;
+}
+
+.resp-sharing-button--facebook {
+  background-color: #3b5998;
+  border-color: #3b5998;
+}
+
+.resp-sharing-button--facebook:hover,
+.resp-sharing-button--facebook:active {
+  background-color: #2d4373;
+  border-color: #2d4373;
+}
+
+.resp-sharing-button--twitter {
+  background-color: #55acee;
+  border-color: #55acee;
+}
+
+.resp-sharing-button--twitter:hover,
+.resp-sharing-button--twitter:active {
+  background-color: #2795e9;
+  border-color: #2795e9;
+}
+
