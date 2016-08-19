@@ -18,7 +18,7 @@ $( document ).ready(function() {
 		// 	$("html, body").animate({ scrollTop: $(document).height() }, "slow");
 		// });
 	}, 3000);
-	var link = "http://frank-ocean.herokuapp.com/";
+	var link = "https://frank-ocean.herokuapp.com/";
 	$.get(link+"/api/1/health", function(data){
 		var userCount = data.users.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 		$(".ago").html(data.iTunes);
@@ -28,7 +28,7 @@ $( document ).ready(function() {
 
 function iMessage(){
 	var number = $(".number-input").val();
-	var link = "http://frank-ocean.herokuapp.com/";
+	var link = "https://frank-ocean.herokuapp.com/";
 	ga('send', 'event', 'Subscribte', 'text', 'Number added');
 	$.post(link+"/api/1/new", { n: number });
 	$(".iMessage").fadeOut();
