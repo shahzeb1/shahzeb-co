@@ -16,7 +16,6 @@
 	margin-bottom: 10px;
 }
 
-
 .frank-container{
 	margin-top: 50px;
 }
@@ -227,6 +226,9 @@ input::-webkit-inner-spin-button {
 	.album-artwork{
 		margin-top: 10px;
 		padding-top: 0px;
+	}
+	.instagram-media{
+		width: 300px !important;
 	}
 
 }
